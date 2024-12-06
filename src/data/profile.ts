@@ -1,3 +1,6 @@
+import scholaro from "../../assets/images/scholaro.png";
+import escape from "../../assets/images/escape.png";
+
 export const profile = {
   name: 'Younes Nedjar,',
   title: 'Étudiant en BUT Informatique',
@@ -32,7 +35,7 @@ export const projects = [
   {
     title: 'Escape Game - Le Wagon Mystérieux',
     description: 'Bienvenue à bord de ce jeu énigmatique, où l\'atmosphère porte l\'empreinte du violent crash du wagon contre le mur.',
-    image: 'https://images.unsplash.com/photo-1626160375897-3a5e6160554b?q=80&w=2070&auto=format&fit=crop',
+    image: escape,
     tech: ['HTML', 'CSS', '2023'],
     highlights: [
       'Conception d\'une expérience immersive',
@@ -44,7 +47,7 @@ export const projects = [
   {
     title: 'Projet Trains',
     description: 'Développement d\'un jeu de société en Java/JavaFX avec interface fonctionnelle.',
-    image: 'https://avatars.mds.yandex.net/get-mpic/4544069/img_id702734926032771273.jpeg/orig',
+    image: scholaro,
     tech: ['Java', 'JavaFX', 'XML', '2023'],
     highlights: [
       'Programmation orientée objets',
