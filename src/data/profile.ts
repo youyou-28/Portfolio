@@ -47,7 +47,7 @@ export const projects = [
   {
     title: 'Projet Trains',
     description: 'Développement d\'un jeu de société en Java/JavaFX avec interface fonctionnelle.',
-    image: scholaro,
+    image: 'https://avatars.mds.yandex.net/get-mpic/4544069/img_id702734926032771273.jpeg/orig',
     tech: ['Java', 'JavaFX', 'XML', '2023'],
     highlights: [
       'Programmation orientée objets',
@@ -58,7 +58,7 @@ export const projects = [
   {
     title: 'Application Web Scholaro',
     description: 'Application web pour l\'aide à la poursuite et la direction d\'études, destinée aux responsables et institutions éducatives.',
-    image: 'https://cdn.discordapp.com/attachments/1288749143556227134/1294069188876439562/2024-10-11_00_43_06-Brandmark_-_make_your_logo_in_minutes.png?ex=67518519&is=67503399&hm=cdf3e4060d794384fc7acd49fd6a6d413daeab9bec624d4b47598248f3032ddd&',
+    image: scholaro,
     tech: ['HTML', 'CSS', 'PHP', '2024'],
     inProgress: true,
   },
