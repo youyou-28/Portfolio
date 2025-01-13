@@ -16,7 +16,7 @@ export function Header() {
 
   return (
     <header className={`fixed w-full z-50 transition-all duration-300 ${
-      scrollPosition > 0 ? 'bg-white/80 backdrop-blur-md shadow-sm' : 'bg-transparent'
+      scrollPosition > 0 || isMenuOpen ? 'bg-white/80 backdrop-blur-md shadow-sm' : 'bg-transparent'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
@@ -54,7 +54,7 @@ export function Header() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden">
+          <div className="md:hidden bg-white">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navItems.map((item) => (
                 <a

@@ -5,4 +5,17 @@ export interface Project {
   tech: string[];
   highlights?: string[];
   inProgress?: boolean;
+  detailedDescription?: string;
+  features?: string[];
+  challenges?: string[];
+  outcomes?: string[];
+  skills?: {
+    category: string;
+    items: string[];
+  }[];
+  learningOutcomes?: {
+    code: string;
+    description: string;
+    achievement: string;
+  }[];
 }
