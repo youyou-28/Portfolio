@@ -20,7 +20,7 @@ export const profile = {
 export const projects = [
   {
     title: 'Escape Game - Le Wagon Mystérieux',
-    description: 'Le Wagon Mystérieux est un site web de présentation des différentes épreuves de notre escape game fictif. Chaque défi, énigme et puzzle proposé dans le jeu est détaillé sur ce site, offrant aux participants un aperçu des défis qu\'ils devront relever.',
+    description: 'Bienvenue à bord de ce jeu énigmatique, où l\'atmosphère porte l\'empreinte du violent crash du wagon contre le mur. ',
     image: escape,
     tech: ['HTML', 'CSS', 'JavaScript', '2023'],
     detailedDescription: 'Le Wagon Mystérieux est un site web de présentation des différentes épreuves de notre escape game fictif. Chaque défi, énigme et puzzle proposé dans le jeu est détaillé sur ce site, offrant aux participants un aperçu des défis qu\'ils devront relever. L\'objectif est de présenter de manière claire et attractive les étapes du jeu, permettant ainsi aux joueurs de se préparer et de mieux comprendre l\'univers du jeu avant de s\'y plonger.',
@@ -75,7 +75,7 @@ export const projects = [
   },
   {
     title: 'Projet Trains',
-    description: 'Dans le cadre d\'un projet universitaire, j\'ai conçu une simulation de jeu de gestion ferroviaire appelée Trains. J\'ai utilisé Java pour la logique métier et JavaFX pour l\'interface graphique. Ce projet intègre des aspects de stratégie, d\'optimisation et de programmation orientée objet, afin d\'offrir une expérience interactive et captivante.',
+    description: 'Développement du jeu de société "Trains" en Java/JavaFX avec une interface fonctionnelle.',
     image:trains,
     tech: ['Java', 'JavaFX', 'XML', '2023'],
     features: [
