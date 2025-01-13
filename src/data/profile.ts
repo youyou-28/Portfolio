@@ -76,7 +76,7 @@ export const projects = [
   {
     title: 'Projet Trains',
     description: 'Dans le cadre d\'un projet universitaire, j\'ai conçu une simulation de jeu de gestion ferroviaire appelée Trains. J\'ai utilisé Java pour la logique métier et JavaFX pour l\'interface graphique. Ce projet intègre des aspects de stratégie, d\'optimisation et de programmation orientée objet, afin d\'offrir une expérience interactive et captivante.',
-    image: trains,
+    image:trains,
     tech: ['Java', 'JavaFX', 'XML', '2023'],
     features: [
       'Interface interactive JavaFX permettant de construire des rails pour relier des villes et des industries',
