@@ -1,5 +1,6 @@
 import scholaro from "../../assets/images/scholaro.png";
 import escape from "../../assets/images/escape.png";
+import trains from "../../assets/images/trains.png";
 
 export const profile = {
   name: 'Younes Nedjar,',
@@ -75,7 +76,7 @@ export const projects = [
   {
     title: 'Projet Trains',
     description: 'Dans le cadre d\'un projet universitaire, j\'ai conçu une simulation de jeu de gestion ferroviaire appelée Trains. J\'ai utilisé Java pour la logique métier et JavaFX pour l\'interface graphique. Ce projet intègre des aspects de stratégie, d\'optimisation et de programmation orientée objet, afin d\'offrir une expérience interactive et captivante.',
-    image: 'https://avatars.mds.yandex.net/get-mpic/4544069/img_id702734926032771273.jpeg/orig',
+    image: trains,
     tech: ['Java', 'JavaFX', 'XML', '2023'],
     features: [
       'Interface interactive JavaFX permettant de construire des rails pour relier des villes et des industries',
