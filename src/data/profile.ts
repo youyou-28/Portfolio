@@ -140,7 +140,7 @@ export const projects = [
   {
     title: 'Application Web Scholaro',
     description: 'Application web pour l\'aide à la poursuite et la direction d\'études, destinée aux responsables et institutions éducatives.',
-    image: 'Application web pour l\'aide à la poursuite et la direction d\'études, destinée aux responsables et institutions éducatives.',
+    image: scholaro,
     tech: ['HTML', 'CSS', 'PHP', 'MySQL', '2024'],
     github: 'https://github.com/youyou-28/Scholaro',
     inProgress: true,
