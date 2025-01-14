@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, Github } from 'lucide-react';
 import { projects } from '../data/profile';
 
 export function ProjectPage() {
@@ -29,13 +29,27 @@ export function ProjectPage() {
   return (
     <div className="min-h-screen bg-gray-50 pt-24">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <Link 
-          to="/" 
-          className="inline-flex items-center text-indigo-600 hover:text-indigo-700 mb-8"
-        >
-          <ArrowLeft className="h-5 w-5 mr-2" />
-          Retour au portfolio
-        </Link>
+        <div className="flex justify-between items-center mb-8">
+          <Link 
+            to="/" 
+            state={{ fromProject: true }}
+            className="inline-flex items-center text-indigo-600 hover:text-indigo-700"
+          >
+            <ArrowLeft className="h-5 w-5 mr-2" />
+            Retour au portfolio
+          </Link>
+          {project.github && (
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center text-gray-600 hover:text-indigo-600 transition-colors"
+            >
+              <Github className="h-5 w-5 mr-2" />
+              <span>Voir sur GitHub</span>
+            </a>
+          )}
+        </div>
         
         <img
           src={project.image}

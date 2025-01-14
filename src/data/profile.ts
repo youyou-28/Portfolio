@@ -1,7 +1,3 @@
-import scholaro from "../../assets/images/scholaro.png";
-import escape from "../../assets/images/escape.png";
-import trains from "../../assets/images/trains.png";
-
 export const profile = {
   name: 'Younes Nedjar,',
   title: 'Étudiant en BUT Informatique',
@@ -20,9 +16,10 @@ export const profile = {
 export const projects = [
   {
     title: 'Escape Game - Le Wagon Mystérieux',
-    description: 'Bienvenue à bord de ce jeu énigmatique, où l\'atmosphère porte l\'empreinte du violent crash du wagon contre le mur. ',
-    image: escape,
+    description: 'Le Wagon Mystérieux est un site web de présentation des différentes épreuves de notre escape game fictif. Chaque défi, énigme et puzzle proposé dans le jeu est détaillé sur ce site, offrant aux participants un aperçu des défis qu\'ils devront relever.',
+    image: 'https://images.unsplash.com/photo-1626160375897-3a5e6160554b?q=80&w=2070&auto=format&fit=crop',
     tech: ['HTML', 'CSS', 'JavaScript', '2023'],
+    github: 'https://github.com/youyou-28/EscapeGame',
     detailedDescription: 'Le Wagon Mystérieux est un site web de présentation des différentes épreuves de notre escape game fictif. Chaque défi, énigme et puzzle proposé dans le jeu est détaillé sur ce site, offrant aux participants un aperçu des défis qu\'ils devront relever. L\'objectif est de présenter de manière claire et attractive les étapes du jeu, permettant ainsi aux joueurs de se préparer et de mieux comprendre l\'univers du jeu avant de s\'y plonger.',
     features: [
       'Présentation détaillée de chaque épreuve de l\'escape game',
@@ -75,9 +72,10 @@ export const projects = [
   },
   {
     title: 'Projet Trains',
-    description: 'Développement du jeu de société "Trains" en Java/JavaFX avec une interface fonctionnelle.',
-    image:trains,
+    description: 'Dans le cadre d\'un projet universitaire, j\'ai conçu une simulation de jeu de gestion ferroviaire appelée Trains. J\'ai utilisé Java pour la logique métier et JavaFX pour l\'interface graphique. Ce projet intègre des aspects de stratégie, d\'optimisation et de programmation orientée objet, afin d\'offrir une expérience interactive et captivante.',
+    image: 'https://avatars.mds.yandex.net/get-mpic/4544069/img_id702734926032771273.jpeg/orig',
     tech: ['Java', 'JavaFX', 'XML', '2023'],
+    github: 'https://github.com/youyou-28/Trains',
     features: [
       'Interface interactive JavaFX permettant de construire des rails pour relier des villes et des industries',
       'Vue dynamique affichant graphiquement les rails, gares et trains',
@@ -137,8 +135,9 @@ export const projects = [
   {
     title: 'Application Web Scholaro',
     description: 'Application web pour l\'aide à la poursuite et la direction d\'études, destinée aux responsables et institutions éducatives.',
-    image:scholaro,
+    image: 'https://cdn.discordapp.com/attachments/1288749143556227134/1294069188876439562/2024-10-11_00_43_06-Brandmark_-_make_your_logo_in_minutes.png?ex=67518519&is=67503399&hm=cdf3e4060d794384fc7acd49fd6a6d413daeab9bec624d4b47598248f3032ddd&',
     tech: ['HTML', 'CSS', 'PHP', 'MySQL', '2024'],
+    github: 'https://github.com/youyou-28/Scholaro',
     inProgress: true,
     detailedDescription: 'Le département informatique de l\'IUT de Montpellier organise chaque fin d\'année une réunion pour déterminer la suite du parcours académique de chaque étudiant. Pour ce faire, il est nécessaire d\'examiner les résultats de chaque étudiant, de calculer des moyennes spécifiques aux différentes formations. Cependant, ce processus devient de plus en plus répétitif et long au fil du temps, rendant difficile pour le jury d\'avoir une vision globale des étudiants, ainsi que des statistiques sur les avis favorables, défavorables ou réservés. Le projet qui nous a été attribué consiste à développer une application permettant d\'automatiser cette procédure afin de simplifier le travail du responsable de la poursuite d\'études et du jury dans leurs décisions. Le site proposé faciliterait la création d\'agrégations, c\'est-à-dire des moyennes issues de plusieurs ressources principales, ainsi que la génération de graphiques et de fichiers PDF préremplis qui résument les avis des enseignants.',
     features: [
