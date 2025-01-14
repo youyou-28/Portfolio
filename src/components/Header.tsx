@@ -1,10 +1,13 @@
 import React from 'react';
 import { Menu, X, Code2 } from 'lucide-react';
 import { useScrollPosition } from '../hooks/useScrollPosition';
+import { useLocation, Link } from 'react-router-dom';
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const scrollPosition = useScrollPosition();
+  const location = useLocation();
+  const isProjectPage = location.pathname.includes('/project/');
 
   const navItems = [
     { label: 'Accueil', href: '#home' },
@@ -14,24 +17,32 @@ export function Header() {
     { label: 'Contact', href: '#contact' },
   ];
 
+  const handleNavClick = (href: string) => {
+    if (isProjectPage) {
+      // Si on est sur une page projet, on retourne à la page d'accueil avec l'ancre
+      window.location.href = '/' + href;
+    }
+  };
+
   return (
     <header className={`fixed w-full z-50 transition-all duration-300 ${
       scrollPosition > 0 || isMenuOpen ? 'bg-white/80 backdrop-blur-md shadow-sm' : 'bg-transparent'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <div className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-2">
             <Code2 className="h-8 w-8 text-indigo-600" />
             <span className="text-xl font-bold text-gray-900">DevPortfolio</span>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             {navItems.map((item) => (
               <a
                 key={item.href}
-                href={item.href}
-                className="text-gray-700 hover:text-indigo-600 transition-colors"
+                href={isProjectPage ? undefined : item.href}
+                onClick={() => handleNavClick(item.href)}
+                className="text-gray-700 hover:text-indigo-600 transition-colors cursor-pointer"
               >
                 {item.label}
               </a>
@@ -59,9 +70,12 @@ export function Header() {
               {navItems.map((item) => (
                 <a
                   key={item.href}
-                  href={item.href}
-                  className="block px-3 py-2 text-gray-700 hover:text-indigo-600 transition-colors"
-                  onClick={() => setIsMenuOpen(false)}
+                  href={isProjectPage ? undefined : item.href}
+                  onClick={() => {
+                    handleNavClick(item.href);
+                    setIsMenuOpen(false);
+                  }}
+                  className="block px-3 py-2 text-gray-700 hover:text-indigo-600 transition-colors cursor-pointer"
                 >
                   {item.label}
                 </a>

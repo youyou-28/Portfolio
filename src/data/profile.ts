@@ -20,9 +20,10 @@ export const profile = {
 export const projects = [
   {
     title: 'Escape Game - Le Wagon Mystérieux',
-    description: 'Bienvenue à bord de ce jeu énigmatique, où l\'atmosphère porte l\'empreinte du violent crash du wagon contre le mur. ',
+    description: 'Bienvenue à bord de ce jeu énigmatique, où l\'atmosphère porte l\'empreinte du violent crash du wagon contre le mur.',
     image: escape,
     tech: ['HTML', 'CSS', 'JavaScript', '2023'],
+    github: 'https://github.com/youyou-28/EscapeGame',
     detailedDescription: 'Le Wagon Mystérieux est un site web de présentation des différentes épreuves de notre escape game fictif. Chaque défi, énigme et puzzle proposé dans le jeu est détaillé sur ce site, offrant aux participants un aperçu des défis qu\'ils devront relever. L\'objectif est de présenter de manière claire et attractive les étapes du jeu, permettant ainsi aux joueurs de se préparer et de mieux comprendre l\'univers du jeu avant de s\'y plonger.',
     features: [
       'Présentation détaillée de chaque épreuve de l\'escape game',
@@ -75,9 +76,11 @@ export const projects = [
   },
   {
     title: 'Projet Trains',
-    description: 'Développement du jeu de société "Trains" en Java/JavaFX avec une interface fonctionnelle.',
-    image:trains,
+    description: 'Développement d\'un jeu de société en Java/JavaFX avec interface fonctionnelle.',
+    image: trains,
     tech: ['Java', 'JavaFX', 'XML', '2023'],
+    github: 'https://github.com/youyou-28/Trains',
+    detailedDescription: 'Dans le cadre d\'un projet universitaire, j\'ai conçu une simulation de jeu de gestion ferroviaire appelée Trains. J\'ai utilisé Java pour la logique métier et JavaFX pour l\'interface graphique. Ce projet intègre des aspects de stratégie, d\'optimisation et de programmation orientée objet, afin d\'offrir une expérience interactive et captivante.',
     features: [
       'Interface interactive JavaFX permettant de construire des rails pour relier des villes et des industries',
       'Vue dynamique affichant graphiquement les rails, gares et trains',
@@ -137,8 +140,9 @@ export const projects = [
   {
     title: 'Application Web Scholaro',
     description: 'Application web pour l\'aide à la poursuite et la direction d\'études, destinée aux responsables et institutions éducatives.',
-    image:scholaro,
+    image: 'Application web pour l\'aide à la poursuite et la direction d\'études, destinée aux responsables et institutions éducatives.',
     tech: ['HTML', 'CSS', 'PHP', 'MySQL', '2024'],
+    github: 'https://github.com/youyou-28/Scholaro',
     inProgress: true,
     detailedDescription: 'Le département informatique de l\'IUT de Montpellier organise chaque fin d\'année une réunion pour déterminer la suite du parcours académique de chaque étudiant. Pour ce faire, il est nécessaire d\'examiner les résultats de chaque étudiant, de calculer des moyennes spécifiques aux différentes formations. Cependant, ce processus devient de plus en plus répétitif et long au fil du temps, rendant difficile pour le jury d\'avoir une vision globale des étudiants, ainsi que des statistiques sur les avis favorables, défavorables ou réservés. Le projet qui nous a été attribué consiste à développer une application permettant d\'automatiser cette procédure afin de simplifier le travail du responsable de la poursuite d\'études et du jury dans leurs décisions. Le site proposé faciliterait la création d\'agrégations, c\'est-à-dire des moyennes issues de plusieurs ressources principales, ainsi que la génération de graphiques et de fichiers PDF préremplis qui résument les avis des enseignants.',
     features: [
