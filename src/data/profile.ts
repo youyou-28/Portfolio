@@ -14,7 +14,7 @@ export const profile = {
     github: 'youyou-28',
     cv:'https://acrobat.adobe.com/id/urn:aaid:sc:EU:91852194-7a50-4936-93a6-81cb7b96da12',
   },
-  objective: 'Etudiant en 2e année de BUT informatique à Montpellier.',
+  objective: 'Étudiant en 2e année de BUT informatique à Montpellier.',
 };
 
 export const projects = [
