@@ -232,6 +232,11 @@ export const projects = [
 
 export const education = [
   {
+    degree: 'Stage Informatique',
+    institution: 'Chez Diag2Tec',
+    period: 'De 12 semaines',
+  },
+  {
     degree: 'BUT Informatique',
     institution: 'Université de Montpellier',
     period: '2023-2025',
