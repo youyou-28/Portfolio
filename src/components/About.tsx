@@ -19,10 +19,6 @@ export function About() {
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Formation</h2>
               <div className="space-y-8">
-                <a href={profile.education.link}                  
-                  target="_blank"                  
-                  rel="noopener noreferrer"                   
-                  className="flex items-center text-gray-600 hover:text-indigo-600 transition-colors">{profile.education.name}</a>
                 {education.map((edu, index) => (
                   <div key={index} className="border-l-4 border-indigo-600 pl-4">
                     <h3 className="text-xl font-semibold text-gray-900">{edu.degree}</h3>
