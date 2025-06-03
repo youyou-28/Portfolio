@@ -232,7 +232,7 @@ export const projects = [
   {
     title: "DataDiag - Stage Diag2tec",
     description: "Amélioration d'une application web d'analyse de données biologiques pour la recherche sur les cancers hématologiques",
-    image: "https://images.pexels.com/photos/4226140/pexels-photo-4226140.jpeg",
+    image: datadiag,
     tech: ["PHP", "JavaScript", "MySQL", "HTML", "CSS"],
     detailedDescription: "Durant mon stage au sein de la société Diag2tec, j'ai travaillé à l'amélioration de DataDiag, une application web utilisée par l'ensemble des collaborateurs pour l'analyse de données biologiques pour la recherche sur les cancers hématologiques. Cette application permet de stocker et de rechercher des données biologiques issues d'échantillons de patients atteints de cancer hématologique à l'aide d'une base de données.",
     features: [
