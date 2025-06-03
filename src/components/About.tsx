@@ -22,7 +22,7 @@ export function About() {
                 <a href={profile.education.link}                  
                   target="_blank"                  
                   rel="noopener noreferrer"                   
-                  className="flex items-center text-gray-600 hover:text-indigo-600 transition-colors"></a>
+                  className="flex items-center text-gray-600 hover:text-indigo-600 transition-colors">{profile.education.name}</a>
                 {education.map((edu, index) => (
                   <div key={index} className="border-l-4 border-indigo-600 pl-4">
                     <h3 className="text-xl font-semibold text-gray-900">{edu.degree}</h3>
