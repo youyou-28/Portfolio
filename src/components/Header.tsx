@@ -15,11 +15,11 @@ export function Header() {
     { label: 'Portfolio', href: '#portfolio' },
     { label: 'Compétences', href: '#skills' },
     { label: 'Contact', href: '#contact' },
+    { label: 'Mes apprentissages', href: '/learning', isPage: true },
   ];
 
-  const handleNavClick = (href: string) => {
-    if (isProjectPage) {
-      // Si on est sur une page projet, on retourne à la page d'accueil avec l'ancre
+  const handleNavClick = (href: string, isPage?: boolean) => {
+    if (!isPage && isProjectPage) {
       window.location.href = '/' + href;
     }
   };
@@ -38,14 +38,24 @@ export function Header() {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
             {navItems.map((item) => (
-              <a
-                key={item.href}
-                href={isProjectPage ? undefined : item.href}
-                onClick={() => handleNavClick(item.href)}
-                className="text-gray-700 hover:text-indigo-600 transition-colors cursor-pointer"
-              >
-                {item.label}
-              </a>
+              item.isPage ? (
+                <Link
+                  key={item.href}
+                  to={item.href}
+                  className="text-gray-700 hover:text-indigo-600 transition-colors cursor-pointer"
+                >
+                  {item.label}
+                </Link>
+              ) : (
+                <a
+                  key={item.href}
+                  href={isProjectPage ? undefined : item.href}
+                  onClick={() => handleNavClick(item.href, item.isPage)}
+                  className="text-gray-700 hover:text-indigo-600 transition-colors cursor-pointer"
+                >
+                  {item.label}
+                </a>
+              )
             ))}
           </nav>
 
@@ -68,17 +78,28 @@ export function Header() {
           <div className="md:hidden bg-white">
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navItems.map((item) => (
-                <a
-                  key={item.href}
-                  href={isProjectPage ? undefined : item.href}
-                  onClick={() => {
-                    handleNavClick(item.href);
-                    setIsMenuOpen(false);
-                  }}
-                  className="block px-3 py-2 text-gray-700 hover:text-indigo-600 transition-colors cursor-pointer"
-                >
-                  {item.label}
-                </a>
+                item.isPage ? (
+                  <Link
+                    key={item.href}
+                    to={item.href}
+                    className="block px-3 py-2 text-gray-700 hover:text-indigo-600 transition-colors cursor-pointer"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                ) : (
+                  <a
+                    key={item.href}
+                    href={isProjectPage ? undefined : item.href}
+                    onClick={() => {
+                      handleNavClick(item.href, item.isPage);
+                      setIsMenuOpen(false);
+                    }}
+                    className="block px-3 py-2 text-gray-700 hover:text-indigo-600 transition-colors cursor-pointer"
+                  >
+                    {item.label}
+                  </a>
+                )
               ))}
             </div>
           </div>
