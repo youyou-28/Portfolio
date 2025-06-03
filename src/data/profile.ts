@@ -235,6 +235,7 @@ export const education = [
     degree: 'Stage Informatique',
     institution: 'Chez Diag2Tec',
     period: 'De 12 semaines',
+    link : 'Diag2Tec',
   },
   {
     degree: 'BUT Informatique',
