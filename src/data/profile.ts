@@ -254,13 +254,14 @@ export const projects = [
     ],
     skills: [
       {
-        category: "Compétences Techniques",
+        category: 'Unités d\'Enseignement',
         items: [
-          "Développement PHP/JavaScript",
-          "Gestion de base de données MySQL",
-          "Intégration HTML/CSS",
-          "Architecture MVC",
-          "Optimisation des performances"
+          'UE 1 : Réaliser un développement d\'application',
+          'UE 2 : Optimiser des applications',
+          'UE 3 : Administrer des systèmes informatiques communicants complexes',
+          'UE 4 : Gérer des données de l\'information',
+          'UE 5 : Conduire un projet',
+          'UE 6 : Collaborer au sein d\'une équipe informatique'
         ]
       },
       {
@@ -289,68 +290,56 @@ export const projects = [
         code: "Interface utilisateur",
         description: "Refonte graphique et amélioration de l'expérience utilisateur",
         achievement: "Création d'une interface moderne et ergonomique respectant la charte graphique de l'entreprise"
-      }
-    ]
-  },
-  {
-    title: "Portfolio Personnel",
-    description: "Création d'un portfolio professionnel pour présenter mes projets et compétences",
-    image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg",
-    tech: ["React", "TypeScript", "Tailwind CSS", "Next.js"],
-    detailedDescription: "Développement d'un portfolio personnel moderne et responsive utilisant les dernières technologies web. Le site présente mes projets, compétences et expériences de manière professionnelle et interactive.",
-    features: [
-      "Design responsive et moderne",
-      "Présentation détaillée des projets",
-      "Interface utilisateur intuitive",
-      "Optimisation SEO"
-    ],
-    challenges: [
-      "Création d'un design unique et professionnel",
-      "Implémentation d'animations fluides",
-      "Optimisation des performances",
-      "Déploiement et maintenance continue"
-    ],
-    outcomes: [
-      "Site web professionnel et moderne",
-      "Vitrine efficace de mes compétences",
-      "Expérience utilisateur optimisée",
-      "Base solide pour ma présence en ligne"
-    ],
-    skills: [
-      {
-        category: "Développement Frontend",
-        items: [
-          "React/Next.js",
-          "TypeScript",
-          "Tailwind CSS",
-          "Responsive Design"
-        ]
       },
       {
-        category: "Autres Compétences",
-        items: [
-          "UI/UX Design",
-          "Performance Web",
-          "SEO",
-          "Déploiement"
-        ]
-      }
-    ],
-    learningOutcomes: [
-      {
-        code: "Frontend",
-        description: "Maîtrise des frameworks modernes",
-        achievement: "Création d'une application React performante et maintenable"
+        code: 'AC 1.1',
+        description: 'Élaborer et implémenter les spécifications fonctionnelles et non fonctionnelles à partir des exigences',
+        achievement: 'Le projet a été réalisé d\'après les exigences du client.'
       },
       {
-        code: "Design",
-        description: "Conception d'interfaces utilisateur",
-        achievement: "Réalisation d'un design professionnel et responsive"
+        code: 'AC 1.2',
+        description: 'Appliquer des principes d\'accessibilité et d\'ergonomie',
+        achievement: 'L\'application réalisée est très intuitive et claire.'
       },
       {
-        code: "Déploiement",
-        description: "Mise en production et maintenance",
-        achievement: "Déploiement réussi et maintenance continue du site"
+        code: 'AC 1.3',
+        description: 'Adopter de bonnes pratiques de conception et de programmation',
+        achievement: 'La conception a été réfléchie en amont du projet, puis une fois l\'idée principale de l\'application, nous avons commencé à coder.'
+      },
+      {
+        code: 'AC 1.4',
+        description: 'Vérifier et valider la qualité de l\'application par les tests',
+        achievement: 'Chaque user story a été testée puis validée par le client lors des revues de sprint.'
+      },
+      {
+        code: 'AC 4.1',
+        description: 'Optimiser les modèles de données de l\'entreprise',
+        achievement: 'Les données recueillies ont été optimisées rendant l\'application plus rapide.'
+      },
+      {
+        code: 'AC 4.2',
+        description: 'Assurer la confidentialité des données (intégrité et sécurité)',
+        achievement: 'Les données sont stockées dans la base de données et les mots de passe des utilisateurs sont chiffrés avec un poivre stocké dans le code.'
+      },
+      {
+        code: 'AC 4.3',
+        description: 'Organiser la restitution de données à travers la programmation et la visualisation',
+        achievement: 'Les données stockées sont réutilisées dans les fonctionnalités de l\'application.'
+      },
+      {
+        code: 'AC 5.2',
+        description: 'Formaliser les besoins du client et de l\'utilisateur',
+        achievement: 'Les besoins du client ont été analysé en interne puis mis au clair par le client lui-même via des rendez-vous.'
+      },
+      {
+        code: 'AC 5.3',
+        description: 'Identifier les critères de faisabilité d\'un projet informatique',
+        achievement: 'Certaines fonctionnalités que le client a proposé ont été refusées à cause de leur non-faisabilité.'
+      },
+      {
+        code: 'AC 6.3',
+        description: 'Mobiliser les compétences interpersonnelles pour intégrer une équipe informatique',
+        achievement: 'Les compétences de chaque membre de l\'équipe ont été mises en avant et ont contribué au bon déroulement du projet.'
       }
     ]
   }
