@@ -1,6 +1,7 @@
 import scholaro from '../../assets/images/scholaro.png';
 import escape from '../../assets/images/escape.png';
 import trains from '../../assets/images/trains.png';
+import datadiag from '../../assets/images/datadiag.png';
 
 export const profile = {
   name: 'Younes Nedjar,',
