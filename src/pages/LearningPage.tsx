@@ -78,7 +78,7 @@ return (
 
       <div>
         <h4 className="text-xl font-semibold text-gray-900 mb-4">Compétences acquises</h4>
-        <ul className="list-disc pl-6 space-y-2 text-gray-600">
+        <ul className="list-disc pl-6 space-y-2 text-indigo-600">
           <li>AC 1.1 : Élaborer et implémenter les spécifications fonctionnelles et non fonctionnelles à partir des exigences</li>
           <li>AC 1.2 : Appliquer des principes d'accessibilité et d'ergonomie</li>
           <li>AC 1.3 : Adopter de bonnes pratiques de conception et de programmation</li>
@@ -105,7 +105,7 @@ return (
 
       <div>
         <h4 className="text-xl font-semibold text-gray-900 mb-4">Compétences acquises</h4>
-        <ul className="list-disc pl-6 space-y-2 text-gray-600">
+        <ul className="list-disc pl-6 space-y-2 text-indigo-600">
           <li>AC 1.1 : Implémenter des conceptions simples</li>
           <li>AC 1.4 : Développeur des interfaces utilisateurs</li>
           <li>AC 2.3 : Formaliser et mettre en œuvre des outils mathématiques pour l'informatique</li>
@@ -130,7 +130,7 @@ return (
 
       <div>
         <h4 className="text-xl font-semibold text-gray-900 mb-4">Compétences acquises</h4>
-        <ul className="list-disc pl-6 space-y-2 text-gray-600">
+        <ul className="list-disc pl-6 space-y-2 text-indigo-600">
           <li>AC 3.1 : Installer et configurer des composants logiciels et matériels</li>
           <li>AC 3.3 : Sécuriser un système d'information</li>
           <li>AC 3.4 : Gérer des incidents et des problèmes</li>
@@ -155,7 +155,7 @@ return (
 
       <div>
         <h4 className="text-xl font-semibold text-gray-900 mb-4">Compétences acquises</h4>
-        <ul className="list-disc pl-6 space-y-2 text-gray-600">
+        <ul className="list-disc pl-6 space-y-2 text-indigo-600">
           <li>AC 4.1 : Optimiser les modèles de données de l'entreprise</li>
           <li>AC 4.2 : Assurer la confidentialité des données (intégrité et sécurité)</li>
           <li>AC 4.3 : Organiser la restitution de données à travers la programmation et la visualisation</li>
@@ -178,7 +178,7 @@ return (
 
       <div>
         <h4 className="text-xl font-semibold text-gray-900 mb-4">Compétences acquises</h4>
-        <ul className="list-disc pl-6 space-y-2 text-gray-600">
+        <ul className="list-disc pl-6 space-y-2 text-indigo-600">
           <li>AC 4.1 : Identifier les besoins et les contraintes d'un projet</li>
           <li>AC 4.3 : Suivre l'avancement d'un projet</li>
           <li>AC 4.4 : Évaluer les résultats d'un projet</li>
@@ -203,7 +203,7 @@ return (
 
       <div>
         <h4 className="text-xl font-semibold text-gray-900 mb-4">Compétences acquises</h4>
-        <ul className="list-disc pl-6 space-y-2 text-gray-600">
+        <ul className="list-disc pl-6 space-y-2 text-indigo-600">
           <li>AC 1.2 : Travailler en environnement collaboratif</li>
           <li>AC 5.3 : Communiquer efficacement avec les parties interprètent</li>
           <li>AC 6.3 : Adopter une posture professionnelle</li>
