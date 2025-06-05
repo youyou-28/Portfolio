@@ -8,6 +8,7 @@ export function Header() {
   const scrollPosition = useScrollPosition();
   const location = useLocation();
   const isProjectPage = location.pathname.includes('/project/');
+  const isLearningPage = location.pathname === '/learning';
 
   const navItems = [
     { label: 'Accueil', href: '#home' },
@@ -19,9 +20,17 @@ export function Header() {
   ];
 
   const handleNavClick = (href: string, isPage?: boolean) => {
-    if (!isPage && isProjectPage) {
-      window.location.href = '/' + href;
+    if (!isPage) {
+      if (isLearningPage || isProjectPage) {
+        window.location.href = '/' + href;
+      } else {
+        const element = document.querySelector(href);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
     }
+    setIsMenuOpen(false);
   };
 
   return (
@@ -49,7 +58,7 @@ export function Header() {
               ) : (
                 <a
                   key={item.href}
-                  href={isProjectPage ? undefined : item.href}
+                  href={isProjectPage || isLearningPage ? undefined : item.href}
                   onClick={() => handleNavClick(item.href, item.isPage)}
                   className="text-gray-700 hover:text-indigo-600 transition-colors cursor-pointer"
                 >
@@ -90,11 +99,8 @@ export function Header() {
                 ) : (
                   <a
                     key={item.href}
-                    href={isProjectPage ? undefined : item.href}
-                    onClick={() => {
-                      handleNavClick(item.href, item.isPage);
-                      setIsMenuOpen(false);
-                    }}
+                    href={isProjectPage || isLearningPage ? undefined : item.href}
+                    onClick={() => handleNavClick(item.href, item.isPage)}
                     className="block px-3 py-2 text-gray-700 hover:text-indigo-600 transition-colors cursor-pointer"
                   >
                     {item.label}
