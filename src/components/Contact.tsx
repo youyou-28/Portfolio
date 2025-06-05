@@ -1,11 +1,37 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Mail, Phone, Github, Linkedin, File } from 'lucide-react';
 import { profile } from '../data/profile';
 
 export function Contact() {
+  const [showToast, setShowToast] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
+    // Reset form
+    setFormData({
+      name: '',
+      email: '',
+      message: ''
+    });
+    // Show toast
+    setShowToast(true);
+    // Hide toast after 3 seconds
+    setTimeout(() => {
+      setShowToast(false);
+    }, 3000);
   };
 
   return (
@@ -66,6 +92,9 @@ export function Contact() {
               <input
                 type="text"
                 id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                 required
               />
@@ -77,6 +106,9 @@ export function Contact() {
               <input
                 type="email"
                 id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                 required
               />
@@ -87,6 +119,9 @@ export function Contact() {
               </label>
               <textarea
                 id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
                 rows={4}
                 className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
                 required
@@ -100,6 +135,15 @@ export function Contact() {
             </button>
           </form>
         </div>
+      </div>
+
+      {/* Toast Notification */}
+      <div
+        className={`fixed bottom-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg transform transition-transform duration-300 ${
+          showToast ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
+        }`}
+      >
+        Message envoyé avec succès !
       </div>
     </section>
   );
